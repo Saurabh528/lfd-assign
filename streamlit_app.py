@@ -297,11 +297,7 @@ st.sidebar.header("🤖 OpenAI Analysis")
 openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 # Model selection
-openai_model = st.sidebar.selectbox(
-    "Model",
-    ["gpt-4o", "gpt-4o-mini"],
-    help="Select the OpenAI model to use"
-)
+openai_model = "gpt-4o"
 
 # Enable OpenAI analysis toggle
 

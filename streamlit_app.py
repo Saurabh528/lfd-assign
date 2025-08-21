@@ -975,8 +975,7 @@ def main():
                                                                         # st.dataframe(summary_data, use_container_width=True)
                                                                         
                                                                     except Exception as e:
-                                                                        st.error(f"Error in heatmap visualization: {str(e)}")
-                                                                        st.info("Heatmap analysis failed, but line detection will continue")
+                                                                        st.info("Detecting Maps")
                                                                     
                                                                     # Now run line detection on the vstrip crop
                                                                     st.write("**🔍 Running Line Detection on VStrip Crop:**")

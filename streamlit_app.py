@@ -304,14 +304,7 @@ openai_model = st.sidebar.selectbox(
 )
 
 # Enable OpenAI analysis toggle
-enable_openai_analysis = st.sidebar.checkbox(
-    "Enable GPT-4o Analysis",
-    value=False,
-    help="Enable AI-powered lateral flow device analysis on cropped regions"
-)
 
-if enable_openai_analysis and not openai_api_key:
-    st.sidebar.warning("⚠️ API key required for OpenAI analysis")
 
 
 

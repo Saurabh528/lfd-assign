@@ -239,7 +239,7 @@ st.title("🎯 YOLOv8 OBB Object Detection App")
 st.markdown("Upload an image to detect objects with oriented bounding boxes using your trained YOLOv8 model.")
 
 # Add OpenAI integration notice
-st.info("🚀 **NEW**: AI-powered lateral flow analysis with GPT-4o! Enable in the sidebar to analyze detected regions with OpenAI's vision model.")
+st.info("🚀 **NEW**: AI-powered lateral flow analysis with GPT-4o!")
 
 # Sidebar for model configuration
 st.sidebar.header("⚙️ Model Configuration")

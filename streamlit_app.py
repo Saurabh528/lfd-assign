@@ -1134,26 +1134,26 @@ def main():
                                                                                         st.info("No significant components detected for analysis")
                                                                                 
                                                                                 # Summary statistics
-                                                                                st.write("**📋 Processing Summary:**")
-                                                                                summary_data = {
-                                                                                    "Metric": [
-                                                                                        "Original Dimensions",
-                                                                                        "Cropped Dimensions", 
-                                                                                        "Threshold Value (90th %)",
-                                                                                        "Components Detected",
-                                                                                        "Min Area Filter",
-                                                                                        "Aspect Ratio Filter"
-                                                                                    ],
-                                                                                    "Value": [
-                                                                                        f"{vstrip_gray.shape[1]} × {vstrip_gray.shape[0]}",
-                                                                                        f"{vstrip_blur_cropped.shape[1]} × {vstrip_blur_cropped.shape[0]}",
-                                                                                        f"{thresh:.1f}",
-                                                                                        f"{num_labels - 1}",
-                                                                                        f"≥ {min_area} pixels",
-                                                                                        "> 2.0 (horizontal)"
-                                                                                    ]
-                                                                                }
-                                                                                st.dataframe(summary_data, use_container_width=True)
+                                                                                # st.write("**📋 Processing Summary:**")
+                                                                                # summary_data = {
+                                                                                #     "Metric": [
+                                                                                #         "Original Dimensions",
+                                                                                #         "Cropped Dimensions", 
+                                                                                #         "Threshold Value (90th %)",
+                                                                                #         "Components Detected",
+                                                                                #         "Min Area Filter",
+                                                                                #         "Aspect Ratio Filter"
+                                                                                #     ],
+                                                                                #     "Value": [
+                                                                                #         f"{vstrip_gray.shape[1]} × {vstrip_gray.shape[0]}",
+                                                                                #         f"{vstrip_blur_cropped.shape[1]} × {vstrip_blur_cropped.shape[0]}",
+                                                                                #         f"{thresh:.1f}",
+                                                                                #         f"{num_labels - 1}",
+                                                                                #         f"≥ {min_area} pixels",
+                                                                                #         "> 2.0 (horizontal)"
+                                                                                #     ]
+                                                                                # }
+                                                                                # st.dataframe(summary_data, use_container_width=True)
                                                                                 
                                                                             except Exception as e:
                                                                                 st.error(f"Error in heatmap visualization: {str(e)}")

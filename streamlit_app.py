@@ -978,7 +978,7 @@ def main():
                                                                         st.info("Detecting Maps")
                                                                     
                                                                     # Now run line detection on the vstrip crop
-                                                                    st.write("**🔍 Running Line Detection on VStrip Crop:**")
+                                                                    #st.write("**🔍 Running Line Detection on VStrip Crop:**")
                                                                     try:
                                                                         # Get the vstrip crop for line detection
                                                                         if len(vstrip_detections) > 0:

@@ -1255,16 +1255,16 @@ def main():
     if uploaded_file is None:
         st.info("👆 Please upload an image to start object detection.")
         
-        st.subheader("ℹ️ How to use:")
-        st.markdown("""
-        1. **Configure Model**: Set the path to your trained YOLOv8 OBB model weights in the sidebar
-        2. **Adjust Parameters**: Fine-tune confidence and IoU thresholds as needed
-        3. **Upload Image**: Click "Browse files" to upload an image for detection
-        4. **View Results**: See the original and annotated images side by side
-        5. **Download**: Save the annotated image with detected objects
+        # st.subheader("ℹ️ How to use:")
+        # st.markdown("""
+        # 1. **Configure Model**: Set the path to your trained YOLOv8 OBB model weights in the sidebar
+        # 2. **Adjust Parameters**: Fine-tune confidence and IoU thresholds as needed
+        # 3. **Upload Image**: Click "Browse files" to upload an image for detection
+        # 4. **View Results**: See the original and annotated images side by side
+        # 5. **Download**: Save the annotated image with detected objects
         
-        **Supported formats**: PNG, JPG, JPEG, WebP
-        """)
+        # **Supported formats**: PNG, JPG, JPEG, WebP
+        # """)
 
 if __name__ == "__main__":
     main()

@@ -701,14 +701,14 @@ def main():
                                                             
                                                             
                                                         else:
-                                                            st.error("Could not load original image for OpenAI analysis.")
+                                                            st.error("Could not load original image for analysis.")
                                                         
                                                     except Exception as e:
-                                                        st.error(f"OpenAI analysis failed: {str(e)}")
+                                                        st.error(f"analysis failed: {str(e)}")
                                                         st.info("Please check your API key and try again.")
                                         
-                                        elif enable_openai_analysis and not openai_api_key:
-                                            st.warning("🔑 **OpenAI API Key Required**: Please enter your API key in the sidebar to enable AI analysis.")
+                                        else:
+                                            st.warning("🔑 ** API Key Required**: Please enter your API key.")
                                         
                                         # Add download button for individual crop
                                         cropped_pil = Image.fromarray(cropped_img)

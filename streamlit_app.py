@@ -1167,7 +1167,7 @@ def main():
                                                                             # - Darkness profile plotting
                                                                             # - Line detection result display
                                                                             
-                                                                            st.info("🔥 Heatmap analysis completed! Line detection has been temporarily disabled.")
+                                                                            #st.info("🔥 Heatmap analysis completed! Line detection has been temporarily disabled.")
                                                                         else:
                                                                             st.info("No vstrip detections available for line detection.")
                                                                     except Exception as e:

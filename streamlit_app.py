@@ -236,7 +236,7 @@ st.set_page_config(
 
 # Title and description
 st.title("🎯 AI-powered lateral flow analysis")
-st.markdown("Upload an image to detect objects with oriented bounding boxes using your trained YOLOv8 model.")
+st.markdown("Upload an image of lateral flow device to analyze.")
 
 
 

@@ -675,7 +675,7 @@ def main():
                                         
                                         # OpenAI Analysis Integration
                                         if openai_api_key:
-                                            st.write("**🤖 AI-Powered Lateral Flow Analysis:**")
+                                            st.write("**🤖Lateral Flow Analysis:**")
                                             
                                             # Create analyze button for this crop
                                             if st.button(f"🤖 Analyze The Lines", key=f"openai_analyze_{detection_idx}"):

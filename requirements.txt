@@ -1,33 +1,10 @@
-# Core framework
-streamlit==1.48.1
-
-# Image processing
-opencv-contrib-python-headless==4.10.0.84
-numpy==1.26.4
-scipy==1.11.4
-scikit-image==0.24.0
-pillow==11.0.0
-imutils==0.5.4
-tifffile==2025.6.11
-imageio==2.37.0
-
-
-
-# ML stack
-torch==2.2.2
-torchvision==0.17.2
-ultralytics==8.3.181
-ultralytics-thop==2.0.15
-supervision==0.26.1
-
-# Plotting & data
-matplotlib==3.10.5
-pandas==2.3.1
-altair==5.5.0
-pydeck==0.9.1
-
-# Utilities
-requests==2.32.5
-PyYAML==6.0.2
-protobuf==4.25.3
-tenacity==9.1.2
+streamlit>=1.48.1
+ultralytics>=8.3.181
+supervision>=0.26.1
+opencv-python>=4.8.1.78
+numpy>=1.26.4
+pillow>=11.0.0
+matplotlib>=3.10.5
+scipy>=1.16.1
+openai>=1.100.2
+pandas>=2.3.1

@@ -245,11 +245,7 @@ st.info("🚀 **NEW**: AI-powered lateral flow analysis with GPT-4o! Enable in t
 st.sidebar.header("⚙️ Model Configuration")
 
 # Model path input
-model_path = st.sidebar.text_input(
-    "Model Path", 
-    value="runs/obb/train/weights/best1.pt",
-    help="Path to your trained YOLOv8 OBB model weights"
-)
+model_path = 'best1.pt'
 
 # Detection parameters
 conf_threshold = st.sidebar.slider(
@@ -762,7 +758,7 @@ def main():
                                                     st.write("**🔍 Detecting Vertical Strips with vstrip.pt model:**")
                                                     try:
                                                         # Load vstrip model
-                                                        vstrip_model = YOLO('runs/obb/train/weights/vstrip.pt')
+                                                        vstrip_model = YOLO('vstrip.pt')
                                                         
                                                         # Save cropped image to temp file for inference
                                                         with tempfile.NamedTemporaryFile(delete=False, suffix='.png') as temp_crop:

@@ -738,7 +738,7 @@ def main():
                                                     result, vis, smoothed, peaks, labels, lines = None, None, None, None, None, None
                                                     
                                                     # Apply vstrip.pt model to detect vertical strips
-                                                    st.write("**🔍 Detecting Vertical Strips with vstrip.pt model:**")
+                                                    st.write("**🔍 Detecting Vertical Strip Region**")
                                                     try:
                                                         # Load vstrip model
                                                         vstrip_model = YOLO('vstrip.pt')

@@ -160,7 +160,7 @@ def render_openai_analysis(analysis: Dict[str, Any]) -> None:
     ambiguity = analysis.get("ambiguity_score")
     image_quality = analysis.get("image_quality_notes", "")
 
-    st.write("**🤖 GPT-4o Analysis Results:**")
+    st.write("**Analysis Results:**")
     
     # Control line details
     control_present = control_data.get("present", False)

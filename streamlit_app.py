@@ -760,17 +760,17 @@ def main():
                                                             )
                                                             
                                                             # Debug output for vstrip detection
-                                                            st.write(f"Debug: VStrip results type: {type(vstrip_results)}")
-                                                            st.write(f"Debug: VStrip results length: {len(vstrip_results) if vstrip_results else 'None'}")
-                                                            if vstrip_results and len(vstrip_results) > 0:
-                                                                vstrip_result = vstrip_results[0]
-                                                                st.write(f"Debug: VStrip first result type: {type(vstrip_result)}")
-                                                                if hasattr(vstrip_result, 'obb') and vstrip_result.obb is not None:
-                                                                    st.write(f"Debug: VStrip OBB detections: {vstrip_result.obb.xyxyxyxy.shape if hasattr(vstrip_result.obb, 'xyxyxyxy') else 'No xyxyxyxy'}")
-                                                                if hasattr(vstrip_result, 'boxes') and vstrip_result.boxes is not None:
-                                                                    st.write(f"Debug: VStrip boxes detections: {len(vstrip_result.boxes)}")
-                                                                else:
-                                                                    st.write("Debug: VStrip boxes is None (normal for OBB models)")
+                                                            #st.write(f"Debug: VStrip results type: {type(vstrip_results)}")
+                                                            #st.write(f"Debug: VStrip results length: {len(vstrip_results) if vstrip_results else 'None'}")
+                                                            # if vstrip_results and len(vstrip_results) > 0:
+                                                            #     vstrip_result = vstrip_results[0]
+                                                            #     #st.write(f"Debug: VStrip first result type: {type(vstrip_result)}")
+                                                            #     if hasattr(vstrip_result, 'obb') and vstrip_result.obb is not None:
+                                                            #         #st.write(f"Debug: VStrip OBB detections: {vstrip_result.obb.xyxyxyxy.shape if hasattr(vstrip_result.obb, 'xyxyxyxy') else 'No xyxyxyxy'}")
+                                                            #     if hasattr(vstrip_result, 'boxes') and vstrip_result.boxes is not None:
+                                                            #         #st.write(f"Debug: VStrip boxes detections: {len(vstrip_result.boxes)}")
+                                                            #     else:
+                                                                    #st.write("Debug: VStrip boxes is None (normal for OBB models)")
                                                             
                                                             # Clean up temp file
                                                             os.unlink(temp_crop.name)

@@ -290,7 +290,7 @@ use_preprocessing = st.sidebar.checkbox(
 st.sidebar.divider()
 
 # OpenAI configuration
-st.sidebar.header("🤖 OpenAI Analysis")
+#st.sidebar.header("🤖 OpenAI Analysis")
 
 # API Key input
 openai_api_key = st.secrets["OPENAI_API_KEY"]

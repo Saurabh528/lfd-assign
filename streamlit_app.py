@@ -294,12 +294,7 @@ st.sidebar.divider()
 st.sidebar.header("🤖 OpenAI Analysis")
 
 # API Key input
-openai_api_key = st.sidebar.text_input(
-    "OpenAI API Key",
-    value=os.getenv("OPENAI_API_KEY", ""),
-    type="password",
-    
-)
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 # Model selection
 openai_model = st.sidebar.selectbox(

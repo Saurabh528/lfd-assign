@@ -235,7 +235,7 @@ st.set_page_config(
 )
 
 # Title and description
-st.title("🎯 AI-powered lateral flow analysis")
+st.title("🎯Lateral flow analysis")
 st.markdown("Upload an image of lateral flow device to analyze.")
 
 

@@ -674,7 +674,7 @@ def main():
                                         st.image(cropped_img, caption=f"{class_name} ({confidence:.3f})", use_container_width=True)
                                         
                                         # OpenAI Analysis Integration
-                                        if enable_openai_analysis and openai_api_key:
+                                        if openai_api_key:
                                             st.write("**🤖 AI-Powered Lateral Flow Analysis:**")
                                             
                                             # Create analyze button for this crop

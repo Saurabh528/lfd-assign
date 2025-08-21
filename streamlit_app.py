@@ -1253,7 +1253,7 @@ def main():
     
     # Instructions
     if uploaded_file is None:
-        st.info("👆 Please upload an image to start object detection.")
+        st.info("👆 Please upload an image to start.")
         
         # st.subheader("ℹ️ How to use:")
         # st.markdown("""
